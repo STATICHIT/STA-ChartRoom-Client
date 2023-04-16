@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="352.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="page.Controller.AddInfoController">
+    <children>
+        <ImageView fitHeight="352.0" fitWidth="464.0" opacity="0.63">
+            <image>
+                <Image url="@../picture/蓝色主题背景.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="307.0" fitWidth="436.0" layoutX="21.0" layoutY="23.0" opacity="0.43" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../picture/white.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="avatar" fitHeight="100.0" fitWidth="100.0" layoutX="46.0" layoutY="49.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../picture/新一头像.jpg"/>
+            </image>
+        </ImageView>
+        <Text fx:id="nickname" layoutX="46.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名"
+              wrappingWidth="122.49218964576721">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Text>
+        <Text fx:id="userid" fill="#323232" layoutX="46.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="用户id" wrappingWidth="122.4921875">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Text>
+        <Text fill="#464545" layoutX="46.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="生日："/>
+        <Text fill="#464545" layoutX="46.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="性别："/>
+        <Text fx:id="text1" fill="#464545" layoutX="84.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Text"/>
+        <Text fx:id="text2" fill="#464545" layoutX="84.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Text"/>
+        <Text fill="#464545" layoutX="162.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="请输入验证信息："
+              wrappingWidth="139.0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="addinfo" layoutX="162.0" layoutY="59.0" opacity="0.76" prefHeight="100.0" prefWidth="268.0"
+                   promptText="你好，我是..."/>
+        <Button layoutX="301.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="23.0"
+                prefWidth="116.0" style="-fx-background-color: white;" text="添  加" textFill="#5f80d3">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

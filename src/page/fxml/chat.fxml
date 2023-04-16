@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="900.0" prefHeight="613.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="page.Controller.ChatController">
+    <children>
+        <ListView fx:id="messageListView" layoutX="63.0" layoutY="29.0" onMouseClicked="#CloseEmoji3" prefHeight="586.0" prefWidth="267.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="29.0" />
+        <TextArea fx:id="connect" layoutX="330.0" layoutY="366.0" onMouseClicked="#CloseEmoji1" prefHeight="210.0" prefWidth="594.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="1.0" />
+        <Text fx:id="target" layoutX="340.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="540.9999969303608">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="theavatar" fitHeight="44.0" fitWidth="44.0" layoutX="8.0" layoutY="41.0" onMouseClicked="#privatemessage" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="41.0">
+            <image>
+                <Image url="@../picture/新一头像.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="8.0" layoutY="99.0" onMouseClicked="#friend" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="99.0">
+            <image>
+                <Image url="@../picture/通讯录.png" />
+            </image>
+        </ImageView>
+        <ListView fx:id="chatListView" layoutX="330.0" layoutY="76.0" onMouseClicked="#CloseEmoji2" prefHeight="289.0" prefWidth="594.0" />
+        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="407.0" layoutY="370.0" onMouseClicked="#Emoji" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/smile-fill.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="446.0" layoutY="370.0" onMouseClicked="#addImage" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/add-fill.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="833.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#send" opacity="0.83" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #1296DB;" text="发送" textAlignment="CENTER" textFill="WHITE" />
+        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="13.0" layoutY="505.0" onMouseClicked="#add" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/消息_通知.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="13.0" layoutY="448.0" onMouseClicked="#search">
+            <image>
+                <Image url="@../picture/添加好友.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="8.0" layoutY="143.0" onMouseClicked="#group" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/群组.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="creat" fitHeight="44.0" fitWidth="44.0" layoutX="13.0" layoutY="392.0" onMouseClicked="#CreatGroup" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/add-fill.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="more" fitHeight="32.0" fitWidth="32.0" layoutX="879.0" layoutY="45.0" onMouseClicked="#more" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/更多.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="WHITE" strokeType="INSIDE" width="924.0" />
+      <Button fx:id="commonPhrases" layoutX="340.0" layoutY="374.0" mnemonicParsing="false" style="-fx-background-color: #1296DB;" text="常用语" textFill="WHITE" />
+        <Button layoutX="873.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#MinSize" prefHeight="27.0" prefWidth="44.0" style="-fx-background-color: white;">
+            <graphic>
+                <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../picture/2-最小化.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <ImageView fitHeight="43.0" fitWidth="32.0" layoutX="14.0" layoutY="560.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="21.0">
+            <image>
+                <Image url="@../picture/退出.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="486.0" layoutY="369.0" onMouseClicked="#SendFile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/文件.png" />
+         </image>
+      </ImageView>
+        <ImageView fx:id="init" fitHeight="586.0" fitWidth="601.0" layoutX="325.0" layoutY="28.0">
+            <image>
+                <Image url="@../picture/初始页.png" />
+            </image>
+        </ImageView>
+        <Line endX="924.0" endY="34.00001525878906" startY="30.500015258789062" stroke="#8a8a8a" />
+        <Line endX="867.0" endY="-0.9999847412109375" layoutX="6.0" startX="867.0" startY="30.000015258789062" stroke="#aeaeae" />
+    </children>
+</AnchorPane>

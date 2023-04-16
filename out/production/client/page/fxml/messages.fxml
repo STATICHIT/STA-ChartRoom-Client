@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxWidth="555.0" minWidth="555.0" prefHeight="76.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="page.Controller.MessagesController">
+    <children>
+        <ImageView fx:id="image" fitHeight="47.0" fitWidth="56.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/用户.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="id" layoutX="53.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名1" wrappingWidth="207.0">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+        <Text fx:id="time" fill="#9a9a9a" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="发送时间" textAlignment="CENTER" wrappingWidth="572.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="image2" fitHeight="47.0" fitWidth="56.0" layoutX="511.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../picture/用户.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="id2" layoutX="382.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名2" textAlignment="RIGHT" wrappingWidth="122.0">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+      <TextFlow fx:id="message" layoutX="53.0" layoutY="44.0" prefHeight="18.0" prefWidth="346.0" />
+      <TextFlow fx:id="message2" layoutX="99.0" layoutY="42.0" prefHeight="18.0" prefWidth="405.0" textAlignment="RIGHT" />
+    </children>
+</AnchorPane>

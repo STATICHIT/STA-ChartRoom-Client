@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="331.0" prefWidth="445.0" style="-fx-background-color: #B0D5DF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="page.Controller.ChangeController">
+    <children>
+        <ImageView fitHeight="331.0" fitWidth="454.0" layoutX="-2.0" opacity="0.53">
+            <image>
+                <Image url="@../picture/待用背景2.png" />
+            </image>
+        </ImageView>
+        <Text fill="#124c7c" layoutX="45.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="基础信息">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+        <Text layoutX="37.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="昵 称">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="37.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="生 日" wrappingWidth="52.999995708465576">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="272.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="性 别">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#1a578a" layoutX="29.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="个性资料" textAlignment="CENTER" wrappingWidth="108.3603515625">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+        <Line endX="237.0" endY="-7.0" layoutX="186.0" layoutY="206.0" startX="-174.0" startY="-7.0">
+            <stroke>
+                <LinearGradient endX="0.5904761904761905" endY="0.680952380952381" startX="0.17142857142857143" startY="0.20476190476190476">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#2b73af" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Line>
+        <Line endX="240.0" endY="-7.0" layoutX="185.0" layoutY="77.0" startX="-174.0" startY="-7.0">
+            <stroke>
+                <LinearGradient endX="1.0" endY="0.5523809523809524" startX="0.22857142857142856" startY="0.38571428571428573">
+                    <stops>
+                        <Stop color="#2b73af" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Line>
+        <Text layoutX="25.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="个 性 签 名" wrappingWidth="88.99999570846558">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="nickname" layoutX="83.0" layoutY="83.0" opacity="0.76" />
+        <TextField fx:id="sign" layoutX="24.0" layoutY="237.0" onMouseClicked="#CheckName3" opacity="0.76" prefHeight="73.0" prefWidth="280.0" />
+        <Button layoutX="328.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#ok" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: #51C4D3;" text="保 存" textFill="WHITE" />
+        <ComboBox fx:id="sexchose" layoutX="317.0" layoutY="83.0" onMouseClicked="#CheckName1" opacity="0.76" prefHeight="23.0" prefWidth="98.0" />
+        <DatePicker fx:id="birthday" editable="false" layoutX="83.0" layoutY="121.0" onMouseClicked="#CheckName2" opacity="0.76" prefHeight="23.0" prefWidth="161.0" />
+    </children>
+</AnchorPane>
