@@ -58,10 +58,10 @@ STA-ChartRoom客户端
 ![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311024-f29dd54a-7e58-42e5-8649-99e879a982f5.png)
 
 <h3>群资料页面</h3>
-![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311093-9852b816-94b8-4c91-80a1-200beb0b8017.png)
-![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311108-bb2665df-f0c1-45ff-9521-184684b8f0c4.png)
-![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311122-d30a1af1-25f5-4369-860f-ee19f578f9a3.png)
-![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311135-5d5b4994-6f5a-4dd9-96d2-0d9bcc3426c0.png)
+![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311093-9852b816-94b8-4c91-80a1-200beb0b8017.png)</br>
+![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311108-bb2665df-f0c1-45ff-9521-184684b8f0c4.png)</br>
+![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311122-d30a1af1-25f5-4369-860f-ee19f578f9a3.png)</br>
+![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311135-5d5b4994-6f5a-4dd9-96d2-0d9bcc3426c0.png)</br>
 
 <h3>创建群聊界面</h3>
 ![图片无法正常展示](https://user-images.githubusercontent.com/108850075/232311207-b876c1e9-88e9-4e76-9d38-8454c57343cc.png)
